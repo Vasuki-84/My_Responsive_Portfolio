@@ -43,7 +43,9 @@ body {
     transition: 0.5s;
 
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* media query for mobile screen (smaller than 768px) */
 @media (max-width: 768px) {
     .introduction .row {
