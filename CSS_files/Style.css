@@ -1,0 +1,79 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.myimage .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.myimage .myintro{
+    margin-top: 5px ;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.skills {
+    background-color: rgb(176, 174, 174);
+    height: fit-content;
+}
+
+.hireme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.project-inner:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+/* media query for mobile screen (smaller than 768px) */
+@media (max-width: 768px) {
+    .introduction .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .myintro {
+        margin-top: 4px;
+    }
+
+    .mypic {
+        margin-top: 5px;
+    }
+
+    .hireme {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* media query for desktop screens (larger than 1200px) */
+@media (min-width: 769px) and(max-width:1204px)  {
+
+ .mypic{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+}
