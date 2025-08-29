@@ -21,19 +21,30 @@ document.addEventListener("DOMContentLoaded" , () => {
 
         // testing username
         if(!namePattern.test(userName.value)){
-             document.getElementById("nameError").textContent="Username must contain letters";
+             document.getElementById("nameError");
+               nameError.innerHTML = `
+        <div class="alert alert-danger p-2 mt-2 mb-0" role="alert">
+            Username must contain letters
+        </div>
+    `;
             validationSuccess = false;
         }
         
         // testing user email
         if(!emailPattern.test(email.value)) {
-            document.getElementById("emailError").textContent = "Enter the valid Email address";
+            document.getElementById("emailError");
+            emailError.innerHTML = `
+        <div class="alert alert-danger p-2 mt-2 mb-0" role="alert">
+         Enter the valid Email 
+         </div>`;
             validationSuccess = false;
         }
 
         // testing message
         if(!messagePattern.test(message.value)) {
-            document.getElementById("messageError").textContent = "Message must contain atleast 5 characters";
+            document.getElementById("messageError");
+            messageError.innerHTML =`
+            <div class="alert alert-danger p-2 mt-2 mb-0 " role="alert"> Message must contain atleast 5 characters </div>`;
             validationSuccess = false;
         }
 
