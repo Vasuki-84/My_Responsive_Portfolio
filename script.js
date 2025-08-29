@@ -21,19 +21,19 @@ document.addEventListener("DOMContentLoaded" , () => {
 
         // testing username
         if(!namePattern.test(userName.value)){
-            document.getElementById("nameError").textContent="Username must contain letters";
+             document.getElementById("nameError").textContent="Username must contain letters";
             validationSuccess = false;
         }
         
         // testing user email
         if(!emailPattern.test(email.value)) {
-            document.getElementById("inputEmail").textContent = "Enter the valid Email";
+            document.getElementById("emailError").textContent = "Enter the valid Email address";
             validationSuccess = false;
         }
 
         // testing message
         if(!messagePattern.test(message.value)) {
-            document.getElementById("message").textContent = "message must contain atleast 5 characters";
+            document.getElementById("messageError").textContent = "Message must contain atleast 5 characters";
             validationSuccess = false;
         }
 
