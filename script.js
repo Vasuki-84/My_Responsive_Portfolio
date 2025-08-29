@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded" , () => {
         const emailPattern = /^[^\s@]+[^\s@]+\.[^s@]+$/;
         const messagePattern = /^.{5,}$/;
 
+
+        // input fields
         const userName = document.getElementById("inputName");
         const email = document.getElementById("inputEmail");
         const message = document.getElementById("message");
